@@ -1,0 +1,20 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+"""猫"""
+type Cat {
+  """年齢"""
+  age: Int!
+
+  """名前"""
+  name: String!
+
+  """飼い主の名前"""
+  ownerName: Int
+}
+
+type Query {
+  """飼い猫情報を取得"""
+  cat: Cat!
+}
