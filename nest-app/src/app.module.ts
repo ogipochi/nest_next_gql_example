@@ -6,7 +6,7 @@ import { join } from 'path';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { CatsModule } from './cats/cats.module';
-
+import { JobsModule } from './jobs/jobs.module';
 @Module({
   imports: [
     ConfigModule.forRoot(),
@@ -41,6 +41,7 @@ import { CatsModule } from './cats/cats.module';
       inject: [ConfigService],
     }),
     CatsModule,
+    JobsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
